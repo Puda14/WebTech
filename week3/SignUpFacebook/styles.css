@@ -1,0 +1,460 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 70px;
+    width: 400px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+}
+
+.name-inputs {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-inputs>input {
+    width: 42%;
+}
+
+.birthday-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday-inputs>select {
+    width: 30%;
+}
+
+.gender {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.gender-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-input>span {
+    width: 30%;
+}
+
+.label-gender {
+    padding-right: 30px;
+}
+
+.title {
+    margin: 0 10px 0 0;
+    padding: 0 2px 0 0;
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: 35px;
+    margin: 0 0 10px 0px;
+    text-align: left;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="date"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #00a400;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(3, 80, 20);
+}
+
+.label-icon{
+    display: flex;
+    position: relative;
+}
+
+.title{
+    margin-right: 1%;
+}
+
+.label-icon .gender-container i {
+    background-color: #606770;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+.label-icon .birthday-container i {
+    background-color: #606770;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+
+
+.more-infor-birthday {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    left: 10%; 
+    top: 80%; 
+    right: 0;
+    z-index: 999; 
+}
+
+.more-infor-gender{
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    left: 10%; 
+    top: 80%; 
+    right: 0;
+    z-index: 999; 
+}
+
+.manual{
+    font-size: 10px;
+    color: #a1a1a1;
+    margin: 5px 0px 5px 0px;
+}
+
+
+.name-inputs i{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.account-container{
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+
+/*--------------------------- error icon--------------------------- */
+.firstName-error-icon i{
+    position: absolute;
+    left: 40%;
+    top: 37%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #bb4b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.surname-error-icon i{
+    position: absolute;
+    left: 92%;
+    top: 36%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #bb4b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-error-icon{
+    position: absolute;
+    left: 94%;
+    top: 8%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #bb4b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.re-email-error-icon{
+    position: absolute;
+    left: 94%;
+    top: 21%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #bb4b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-error-icon{
+    position: absolute;
+    left: 94%;
+    top: 21%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #bb4b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.birthday-inputs-error-icon{
+    position: absolute;
+    left: 94%;
+    top: 0%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #bb4b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender-inputs-error-icon{
+    position: absolute;
+    left: 94%;
+    top: 0%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #bb4b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pronoun-error-icon{
+    position: absolute;
+    left: 91%;
+    top: 27%;
+    z-index: 998;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #bb4b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*--------------------------------------------------------------- */
+
+.password-container{
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.re-email-container{
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+.select-pronoun{
+    position: relative;
+    margin-bottom: 1px;
+}
+
+
+.pronoun{
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.gender-container{
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.birthday-container{
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.pronoun-selected-container{
+    margin-top: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/* ----------------------error----------------------- */
+.mess-name-error{
+    position: absolute;
+    background-color: #bb4b4b;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    left: 10%; 
+    top: 80%; 
+    right: 0;
+    z-index: 999; 
+}
+
+.mess-account-error{
+    position: absolute;
+    background-color: #bb4b4b;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    left: 10%; 
+    top: 40%; 
+    right: 0;
+    z-index: 999; 
+}
+
+.mess-password-error{
+    position: absolute;
+    background-color: #bb4b4b;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    left: 10%; 
+    top: 90%; 
+    right: 0;
+    z-index: 999; 
+}
+
+.mess-age-error{
+    position: absolute;
+    background-color: #bb4b4b;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    left: 10%; 
+    top: 90%; 
+    right: 0;
+    z-index: 999; 
+}
+
+.mess-gender-error{
+    position: absolute;
+    background-color: #bb4b4b;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    left: 10%; 
+    top: 90%; 
+    right: 0;
+    z-index: 999; 
+}
+
+.mess-pronoun-error{
+    position: absolute;
+    background-color: #bb4b4b;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    left: 10%; 
+    top: 90%; 
+    right: 0;
+    z-index: 999;   
+}
+
+.mess-re-email-error{
+    position: absolute;
+    background-color: #bb4b4b;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    left: 10%; 
+    top: 90%; 
+    right: 0;
+    z-index: 999;   
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang cá nhân</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Thông tin cá nhân</h1>
+    </header>
+    <main>
+      <div class="container">
+        <!-- Overview -->
+        <div class="overview-sidebar">
+          <div class="background">
+            <img src="img/hust.png" alt="background" />
+          </div>
+          <div class="avatar">
+            <img src="img/ava.jpg" alt="avatar" />
+          </div>
+
+          <h2></h2>
+          <p><b>MS: 20210163</b></p>
+          <p>Họ tên: Phùng Tiến Đạt</p>
+          <p>Lớp: Việt Nhật 03-K66</p>
+          <p>Email: dat.pt210163@sis.hust.edu.vn</p>
+        </div>
+
+        <!-- Main -->
+        <div class="main-content">
+          <div class="tab">
+            <button
+              class="tabLinksMain"
+              onclick="openTabMain(event, 'MainTab1')"
+              id="defaultOpenMain"
+            >
+              Lý Lịch
+            </button>
+            <button
+              class="tabLinksMain"
+              onclick="openTabMain(event, 'MainTab2')"
+            >
+              Quyết Định
+            </button>
+            <button
+              class="tabLinksMain"
+              onclick="openTabMain(event, 'MainTab3')"
+            >
+              Khen Thưởng
+            </button>
+            <button
+              class="tabLinksMain"
+              onclick="openTabMain(event, 'MainTab4')"
+            >
+              Liên Hệ
+            </button>
+          </div>
+
+          <div id="MainTab1" class="tab-content">
+            <h4>Thông tin cá nhân</h4>
+
+            <div class="infor-personal">
+              <ul>
+                <li>Ngày sinh: 14/10/2003</li>
+                <li>Số CMTND: 011111111116</li>
+                <li>Dân tộc: Kinh</li>
+                <li>Ngày vào Đoàn:</li>
+              </ul>
+              <ul>
+                <li>Nơi sinh: Hải Phòng</li>
+                <li>Tôn giáo: Không</li>
+                <li>Ngày vào Đảng:</li>
+              </ul>
+              <ul>
+                <li>Giới tính: Nam</li>
+                <li>Ngày cấp:</li>
+                <li>Chi đoàn:</li>
+              </ul>
+            </div>
+
+            <ul>
+              <li>Đối tượng chính sách:</li>
+              <li>Số thẻ bảo hiểm: 3111111104</li>
+              <li>Địa chỉ thường trú: Thôn x, xã PL, huyện TN, thành phố HP</li>
+              <li>Nơi ở hiện tại: Thành phố Hà Nội</li>
+            </ul>
+
+            <h4>Thông tin gia đình</h4>
+
+            <p>Họ và Tên cha: A A A</p>
+
+            <div class="infor-personal">
+              <div style="padding-left: 10px">
+                <ul>
+                  <li>Dân tộc: Kinh</li>
+                  <li>Nơi làm việc:</li>
+                  <li>Địa chỉ thường trú:</li>
+                  <li>Liên hệ: 0969928887</li>
+                </ul>
+              </div>
+
+              <div style="padding-left: 10px">
+                <ul>
+                  <li>Năm sinh: 19xx</li>
+                  <li>Tôn giáo:</li>
+                </ul>
+              </div>
+
+              <div style="padding-left: 10px">
+                <ul>
+                  <li>Quốc tịch: Kinh</li>
+                  <li>Nghề nghiệp: Công chức</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Họ và Tên mẹ: B B B</p>
+            <div class="infor-personal">
+              <div style="padding-left: 10px">
+                <ul>
+                  <li>Dân tộc: Kinh</li>
+                  <li>Nơi làm việc:</li>
+                </ul>
+              </div>
+
+              <div style="padding-left: 10px">
+                <ul>
+                  <li>Năm sinh: 19xx</li>
+                  <li>Tôn giáo:</li>
+                </ul>
+              </div>
+
+              <div style="padding-left: 10px">
+                <ul>
+                  <li>Quốc tịch:</li>
+                  <li>Nghề nghiệp:</li>
+                </ul>
+              </div>
+            </div>
+            <div style="padding-left: 10px; margin-top: 0px !important">
+              Địa chỉ thường trú: Thôn 2, xã PL, huyện TN, thành phố HP
+            </div>
+            <div style="font-weight: bold; padding: 10px">
+              Thông tin người thân khác:
+            </div>
+            <div style="font-weight: bold; padding: 10px">Thuộc hộ:</div>
+            <div style="font-weight: bold; padding: 10px">Số sổ:</div>
+          </div>
+          <div id="MainTab2" class="tab-content"></div>
+
+          <div id="MainTab3" class="tab-content"></div>
+
+          <div id="MainTab4" class="tab-content"></div>
+        </div>
+
+        <!-- Status -->
+        <div class="status-sidebar">
+          <div class="tab">
+            <button
+              class="tabLinksStatus"
+              onclick="openTabStatus(event, 'StatusTab1')"
+              id="defaultOpenStatus"
+            >
+              Trạng Thái
+            </button>
+            <button
+              class="tabLinksStatus"
+              onclick="openTabStatus(event, 'StatusTab2')"
+            >
+              Quản Lý
+            </button>
+          </div>
+
+          <div id="StatusTab1" class="tab-content">
+            <p>Trạng thái học tập: <span style="color : green; font-weight: bold;">Học</span></p>
+            <p>CPA: 3.4</p>
+            <p>Nợ: 0 TC</p>
+            <p>Tích lũy: 78 TC</p>
+            <p>Mức cảnh báo: M0</p>
+            <p>Trình độ: 3</p>
+          </div>
+
+          <div id="StatusTab2" class="tab-content"></div>
+        </div>
+      </div>
+    </main>
+    <div>
+      <img
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 100px;
+        "
+        src="img/hust.png"
+        alt="background"
+      />
+    </div>
+    <footer>
+      <p>&copy; Phùng Tiến Đạt - 20210163</p>
+    </footer>
+
+    <script>
+      function openTabMain(evt, tabName) {
+        var i, tabContent, tabLinks;
+        tabContent = document.querySelectorAll(".main-content .tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+          tabContent[i].style.display = "none";
+        }
+        tabLinks = document.querySelectorAll(".main-content .tabLinksMain");
+        for (i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpenMain").click();
+
+      function openTabStatus(evt, tabName) {
+        var i, tabContent, tabLinks;
+        tabContent = document.querySelectorAll(".status-sidebar .tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+          tabContent[i].style.display = "none";
+        }
+        tabLinks = document.querySelectorAll(".status-sidebar .tabLinksStatus");
+        for (i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpenStatus").click();
+    </script>
+  </body>
+</html>
